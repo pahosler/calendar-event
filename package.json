@@ -1,5 +1,5 @@
 {
-  "name": "calendar-event",
+  "name": "calendar-events",
   "version": "1.0.0",
   "description": "netlify lambda function to display events from google calendar api",
   "main": "index.js",
@@ -7,12 +7,18 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: now test specified\" && exit 1",
-    "start": "netlify-lambda serve src/lambda",
+    "start": "node server-local.js",
     "build": "netlify-lambda build src/lambda"
   },
   "dependencies": {
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
     "dotenv": "^7.0.0",
+    "dotenv-webpack": "^1.7.0",
+    "encoding": "^0.1.12",
+    "express": "^4.16.4",
     "googleapis": "^39.2.0",
-    "netlify-lambda": "^1.4.5"
+    "netlify-lambda": "^1.4.5",
+    "serverless-http": "^2.0.0"
   }
 }
