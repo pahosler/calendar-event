@@ -43,7 +43,7 @@ const getEvents = async () => {
   return await calendar.events.list({
     calendarId: CALENDAR_ID,
     timeMin: (new Date()).toISOString(),
-    maxResults: 3,
+    maxResults: 10,
     singleEvents: true,
     orderBy: 'startTime'
   })
@@ -61,6 +61,7 @@ exports.handler = (event, context, callback) => {
     if (events.length) {
       calEvents.events = events.map(event => ({
         start: event.start.dateTime || event.start.date,
+        end: event.end.dateTime || event.end.date,
         summary: event.summary,
         description: event.description
       }))
