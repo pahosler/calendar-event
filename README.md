@@ -12,6 +12,8 @@ More endpoints could easily be added, but the above is sufficient for the intend
 
 I recommend entering the calender data as stringified json, for example:
 
+![google calendar entry page](./assets/images/google-calendar-entry-page.png)
+
 ```
 {
   "subheading":"standup comedy",
@@ -23,6 +25,8 @@ I recommend entering the calender data as stringified json, for example:
 ```
 
 This will make parsing and using the data much easier, and keeps it in an expected format for use in a webpage.
+
+[Example on codepen.io](https://codepen.io/pahosler/pen/JVOprW?editors=0100)
 
 ### Local Set-up
 
