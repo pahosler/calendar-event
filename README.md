@@ -1,5 +1,29 @@
 ## Calendar Events Netlify function
 
+**calendar-events** is a netlify function that uses the google calendar api to return event information entered into a google calendar.
+
+The calendar-events endpoints are
+- start (event start time)
+- end (event end time)
+- summary (the event title)
+- description (the data entered into the calendar textarea)
+
+More endpoints could easily be added, but the above is sufficient for the intended use case.P
+
+I recommend entering the calender data as stringified json, for example:
+
+```
+{
+  "subheading":"standup comedy",
+  "line1":"8pm - 10pm",
+  "line2":"$20 at door / $15 preorder / 21+",
+  "line3":" ",
+  "ticketurl":"https://www.ticketweb.com/event/alex-hooper-the-cellar-door-tickets/9276085"
+}
+```
+
+This will make parsing and using the data much easier, and keeps it in an expected format for use in a webpage.
+
 ### Local Set-up
 
 - clone this repository
