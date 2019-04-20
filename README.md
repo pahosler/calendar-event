@@ -6,7 +6,7 @@
 - yarn
 - yarn add netlify-cli or globally npm i -g netlify-cli
 - netlify init
-- (you probably won't need this after init) netlify link --name <your-site-name> or netlify link --id 123-123-123-123
+- (you probably won't need this after init) netlify link --name ***your-site-name*** or netlify link --id 123-123-123-123
 - **STOP** go configure netlify in your site settings
 
 
@@ -19,7 +19,7 @@ the following is assuming you have an existing site
 - edit deploy settings directory `./functions` is what you will want to enter for your Functions directory
 - Navigate to Build & Deploy Environment variables
 - Edit variables and enter the following
-  - ACCESS_TOKEN    enter value from tonken.json ex. `ya29.GlvrBnCImILDrwAjzMq2rkvxE6Fx8StL9SnTCSgskSAdQnfTXrtybNeEYU574gsHayAevmLCgfA4QduUHdRh94MIGcJsp7boT_XrkxcdcK_DgRZAIA7TtBPZxopl`
+  - ACCESS_TOKEN    enter value from token.json ex. `ya29.GlvrBnCImILDrwAjzMq2rkvxE6Fx8StL9SnTCSgskSAdQnfTXrtybNeEYU574gsHayAevmLCgfA4QduUHdRh94MIGcJsp7boT_XrkxcdcK_DgRZAIA7TtBPZxopl`
   - CALENDAR_ID     enter value obtained from google calendar settings
   - CLIENT_ID       enter value from credentials.json
   - CLIENT_SECRET   enter value from credentials.json
