@@ -8,7 +8,7 @@ The calendar-events endpoints are
 - summary (the event title)
 - description (the data entered into the calendar textarea)
 
-More endpoints could easily be added, but the above is sufficient for the intended use case.P
+More endpoints could easily be added, but the above is sufficient for the intended use case.
 
 I recommend entering the calender data as stringified json, for example:
 
