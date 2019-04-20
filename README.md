@@ -63,12 +63,15 @@ the following is assuming you have an existing site
 ### Deploying from local dev environment
 
 mkdir build
+
 netlfiy deploy --prod
 
 if there is an error deploying...
 
 rm -rf functions
+
 yarn netlify-lambda build src/lambda
+
 netlify deploy --prod
 
 if there are errors after that, please contact developer!
