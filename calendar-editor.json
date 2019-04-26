@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "quick-nexus-237521",
+  "private_key_id": "312f3121fa53eb128b33affb3dc79c7ccdd84447",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCKCSshpkwQWFK\nAUDWdXGVvnR4n8PyP8R5PXx+bXEuOg5wJxOsRmasAbJ8Th57GGd3nDhMg6I1gTcr\n8APE6sW6KI4SlneWvYvClfWM7+Y/IyRQJLMCa5Aanpnw5bBSM++InrwRUbe8u7Vf\nj6gA0F4KRNi2OOeFOJc0jo2+Gm3EIkFQVU3Rb11jlxGyLdwOgMb2UP9tGO6geY51\nM4xmXwBucboRXkFxDpxm1luWEGyDaIWRJ3hpKr0EEeTP9JgvnAXgSGKkhBMgu2lO\nNLvy89VqMMjpyxG6Lz0xQJNflx8c3BUHk9vFTF3Ff/ypRgt4aY7rNE9jLwKVeOnm\n2Z8C8wQRAgMBAAECggEADdhyARGaI/xNlUrwljqKzoxl3uI5xXExsBmn4pYoX40J\nUYsf1oWwtaxrT3z8pHeRjVCJHT+31gvwZMQ5aJX7YrKYqw+q2IeMy2QJPjMvXqpB\nYSu0zkPgY12TCcA/aiVE/B+htrR2n1FddkKWzvQM+Lt/HsOBExl9guR1jCxzTmyo\n33DWbzs7alVQnxg7wabFbMBQtP81qd57PMQ6AZfm17dPmLlcAgExDAhXF/Ehc26d\nCaLAkdxkv+2lU1Fxh23zZ2MAhTEoN+FhJ73OW4+UjbH7puQd+n95wgw0n6wZQcoy\nqIj0wLDQNCyCtwxO7FSvHdjT/tyWA/q+99s5M262TwKBgQD9fIS+iLMSAhSfUSOG\nhE2W3ofo5BZfcpHYVcDiykDrSdWaWgWbn4y7qxbYa1H8QKGFWPShsgqYgOVQo3nM\nGgzoZ6PRcEFdDJerAD3Ln6jAnmBxhcS19RitvxjBWE3rioox48Dg0WTngWxmBkh4\nq2LERiacvtEZLs/gsVekXqsFiwKBgQDEFQPdeXNS07T0H4j8j58RHYYgIaaGdylN\nDA8QKYB3KO3Hd/jGgBIMRM5gnVoz3afVnedKQtYM/ta6vRp6927OTNOSJvCpCio0\nga0YEsT7JTw0nUCC5tVOlridJeThoaHrUPtAwgawy7hIB1AtutWv22wyWBXjBBMr\nTVNATzeoUwKBgEQS7JM+othzNpaSc7fsT+n0WQtyNY/sdL5kSSieqFCHw5VwF5Fz\nh5femoQETkAwGzB0cz35Ul8iPnMpc8wcMts2+geE3gjfGNwTdIT6m5ce8UeLZQh4\niegfKcbCsCpRSkubnnDByxdg6nt7tHqzjBKpxDTUCdN5ftoYxjCeO8+BAoGAfYIq\nGDBuFd03HW+2Alt36L+qI5UGf1l00UFfvuuhtCQ5lwz+6yf85WeBZiwyGbLOhBhv\nfIQteOIB1kPG2GDaxyg74HgWYU0FWNiMUDVraooZ8F+bdG6GqKgnAUfJKneIKhSK\nzpejKrUrfsdXlf3aW5cquUrSr53jGzuCh05thMsCgYBoWBIYeVunYfx2Ltijpv5r\nF+hqZUaNXsaY9ffkBpPD9+gRNvADRIEoKtn77Gy6+Vt86Ww9QRwaDhW0Eq33uptB\nNxCju5mgT1mYSy+S6hfetYKX3HtnlqmsatDBiBFcqkGKJDi/56y++gsTVbhxBII1\nmQG3+kVFf2jB9/ogOFXofw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "calendar-editor@quick-nexus-237521.iam.gserviceaccount.com",
+  "client_id": "114824931717280578823",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/calendar-editor%40quick-nexus-237521.iam.gserviceaccount.com"
+}

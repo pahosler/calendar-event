@@ -8,6 +8,7 @@
   "scripts": {
     "test": "echo \"Error: now test specified\" && exit 1",
     "start": "node server-local.js",
+    "start:lambda": "yarn netlify-lambda serve src/lambda",
     "build": "netlify-lambda build src/lambda"
   },
   "dependencies": {

@@ -1,10 +1,29 @@
 require('dotenv').config()
 const { google } = require('googleapis')
 
-const MAX_RESULTS = process.env.MAX_RESULTS
+// const MAX_RESULTS = process.env.MAX_RESULTS
 const CALENDAR_ID = process.env.CALENDAR_ID
 
-const getEvents = async () => {
+const getEvents = async ({ maxEvents, date }) => {
+  let query={}
+  if (date) {
+    query = {
+      calendarId: CALENDAR_ID,
+      timeMin: `${date}T05:00:00.000Z`,
+      timeMax: `${date.replace(/\"/g,'')}T23:30:00-05:00`,
+      maxResults: maxEvents || 1,
+      singleEvents: true,
+      orderBy: 'startTime'
+    }
+  } else {
+    query = {
+      calendarId: CALENDAR_ID,
+      timeMin:  (new Date()).toISOString(),
+      maxResults: maxEvents || 100,
+      singleEvents: true,
+      orderBy: 'startTime'
+    }
+  }
   let token = {
     access_token: process.env.ACCESS_TOKEN,
     refresh_token: process.env.REFRESH_TOKEN,
@@ -24,17 +43,13 @@ const getEvents = async () => {
     auth: oAuth2Client
   })
 
-  return await calendar.events.list({
-    calendarId: CALENDAR_ID,
-    timeMin: (new Date()).toISOString(),
-    maxResults: MAX_RESULTS || 3,
-    singleEvents: true,
-    orderBy: 'startTime'
-  })
+  return await calendar.events.list(query)
 }
 
 exports.handler = (event, context, callback) => {
-  getEvents().then(res => {
+  let maxEvents = event.queryStringParameters.maxEvents
+  let date = event.queryStringParameters.date
+  getEvents(event.queryStringParameters).then(res => {
     const events = res.data.items
     const calEvents = {
       success: true,
@@ -45,9 +60,12 @@ exports.handler = (event, context, callback) => {
       calEvents.events = events.map(event => ({
         start: event.start.dateTime || event.start.date,
         end: event.end.dateTime || event.end.date,
-        summary: event.summary,
-        description: event.description
+        summary: event.summary || '',
+        description: event.description || ''
       }))
+      return calEvents
+    } else {
+      calEvents.events = "none"
       return calEvents
     }
   })
