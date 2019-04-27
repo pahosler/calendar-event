@@ -1,7 +1,7 @@
 [build]
   command = "netlify-lambda build src/lambda"
   functions = "functions"
-  publish = "functions"
+  publish = "build"
 
 [build.environment]
   NODE_VERSION = "10"
