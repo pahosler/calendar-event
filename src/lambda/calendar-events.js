@@ -6,7 +6,7 @@ const CALENDAR_ID = process.env.CALENDAR_ID
 
 const getEvents = async ({ maxEvents, date }) => {
   let query={}
-  if (date) {
+  if (date && !maxEvents) {
     query = {
       calendarId: CALENDAR_ID,
       timeMin: `${date}T05:00:00.000Z`,
@@ -15,14 +15,16 @@ const getEvents = async ({ maxEvents, date }) => {
       singleEvents: true,
       orderBy: 'startTime'
     }
-  } else {
+  } else if(date && maxEvents || !date && maxEvents) {
     query = {
       calendarId: CALENDAR_ID,
-      timeMin:  (new Date()).toISOString(),
+      timeMin:  date ? `${date}T05:00:00.000Z` : (new Date()).toISOString(),
       maxResults: maxEvents || 100,
       singleEvents: true,
       orderBy: 'startTime'
     }
+  } else {
+    bad=true
   }
   let token = {
     access_token: process.env.ACCESS_TOKEN,
@@ -47,9 +49,8 @@ const getEvents = async ({ maxEvents, date }) => {
 }
 
 exports.handler = (event, context, callback) => {
-  let maxEvents = event.queryStringParameters.maxEvents
-  let date = event.queryStringParameters.date
-  getEvents(event.queryStringParameters).then(res => {
+  let { maxEvents, date } = event.queryStringParameters
+  getEvents({ maxEvents, date }).then(res => {
     const events = res.data.items
     const calEvents = {
       success: true,
@@ -81,6 +82,6 @@ exports.handler = (event, context, callback) => {
       })
     })
     .catch(e => {
-      callback(e)
+      callback(e +":you must enter a minimum of a date or maxEvents=1")
     })
 }

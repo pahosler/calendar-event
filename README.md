@@ -2,15 +2,46 @@
 
 **calendar-events** is a netlify function that uses the google calendar api to return event information entered into a google calendar.
 
-The calendar-events endpoints are
+### Usage
+
+```javascript
+const URI = "https://site-where-installed.netlify.com/.netlify/functions/calendar-events?maxEvents=3";
+
+const getCalendar=()=>{
+  loading.innerHTML=`<h1 class="loading">Loading...</h1>`
+  fetch(URI, {
+    method: "POST",
+  })
+    .then(response => response.json())
+    .then(json => {
+      console.log(json.events)
+    })
+    .catch(err=>{console.log("error:",err,"calendar data is probably formatted incorrectly")})
+};
+```
+
+It is also possilble to get a specific date:
+
+` https://site-where-installed.netlify.com/.netlify/functions/calendar-events?date=2019-04-28`
+
+If there are no events for a specific date, the api will return `events: "none"`
+
+Or you can specify a date with maxEvents to get a list of events from a specific date:
+
+` https://site-where-installed.netlify.com/.netlify/functions/calendar-events?date=2019-04-20&maxEvents=3`
+
+### Data returned from the endpoint
+The calendar-events endpoint returns:
 - start (event start time)
 - end (event end time)
 - summary (the event title)
 - description (the data entered into the calendar textarea)
 
-More endpoints could easily be added, but the above is sufficient for the intended use case.
+More calendar data could easily be added, but the above is sufficient for the intended use case.
 
 I recommend entering the calender data as stringified json, for example:
+
+*this recomendation will change, the api will eventually also write data, and store things like URLs and event information in extendedProperties.private or extendedProperties.shared.*
 
 ![google calendar entry page](./assets/images/google-calendar-entry-page.png)
 
