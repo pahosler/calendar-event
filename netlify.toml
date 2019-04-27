@@ -4,7 +4,7 @@
   publish = "build"
 
 [build.environment]
-  NODE_VERSION = "10.x"
+  NODE_VERSION = "10"
   ACCESS_TOKEN = "ya29.GlvzBu7bVU2DlI5dzabA24uNkPZPgI7f7D4D72I9eUM4QIa1FREmfsFsEnb0KPWwSDh3kwgxSKb1AIFdfOG1YVf1dOjCdfrMnHjZDol6-AMK8NOAyTQoj1DajmBZ"
   EXPIRY_DATE = "1555918698230"
   REFRESH_TOKEN = "/dsQ-BWIPHaBUcEf7iiEsbBzyX9cwTo2wCW05Hhyu-Tg"
