@@ -4,6 +4,14 @@
 
 ### Usage
 
+To run in a local environmet:
+
+`$ yarn start:lambda`
+
+The function will be available at:
+
+`http://localhost:9000/.netlify/functions/calendar-events?maxEvents=3`
+
 ```javascript
 const URI = "https://site-where-installed.netlify.com/.netlify/functions/calendar-events?maxEvents=3";
 
@@ -45,7 +53,7 @@ I recommend entering the calender data as stringified json, for example:
 
 ![google calendar entry page](./assets/images/google-calendar-entry-page.png)
 
-```
+```json
 {
   "subheading":"standup comedy",
   "line1":"8pm - 10pm",
@@ -78,7 +86,7 @@ the following is assuming you have an existing site
 - select Functions
 - edit deploy settings directory `./functions` is what you will want to enter for your Functions directory
 - Navigate to Build & Deploy Environment variables
-- Edit variables and enter the following
+- Edit variables and enter the following (this must be done manually)
 
 | **Environment variables**    | **Values** |
 |:---|---|
@@ -94,18 +102,11 @@ the following is assuming you have an existing site
 
 ### Deploying from local dev environment
 
-mkdir build
+Edit your netlify.toml file, reveiw the one from this repository.
 
-netlfiy deploy --prod
+Skip this if you automatically build on PR to github:
+- `$ yarn build:lambda`
+- `$ netlfiy deploy --prod`
 
-if there is an error deploying...
 
-rm -rf functions
-
-yarn netlify-lambda build src/lambda
-
-netlify deploy --prod
-
-if there are errors after that, please contact developer!
-
-*once I get a better handle on the netlify.toml file, some of these steps shouldn't be necessary.*
+If there are errors, please file an issue.
