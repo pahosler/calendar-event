@@ -5,15 +5,15 @@
 
 [build.environment]
   NODE_VERSION = "10"
-  ACCESS_TOKEN = "ya29.GlvzBu7bVU2DlI5dzabA24uNkPZPgI7f7D4D72I9eUM4QIa1FREmfsFsEnb0KPWwSDh3kwgxSKb1AIFdfOG1YVf1dOjCdfrMnHjZDol6-AMK8NOAyTQoj1DajmBZ"
-  EXPIRY_DATE = "1555918698230"
-  REFRESH_TOKEN = "1/dsQ-BWIPHaBUcEf7iiEsbBzyX9cwTo2wCW05Hhyu-Tg"
-  CLIENT_ID = "1031855812324-mgpi77bcmpb4qv0lckdkudh7i0uubbrm.apps.googleusercontent.com"
-  CLIENT_SECRET = "7poS8ajL8J_eKjvHsZQZ0kq-"
-  REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
-  CALENDAR_ID = "k00j76b2k0p976p3uncsfqduo8@group.calendar.google.com"
-  DEVELOPER = "Paul Hosler"
+#   ACCESS_TOKEN = "ya29.GlvzBu7bVU2DlI5dzabA24uNkPZPgI7f7D4D72I9eUM4QIa1FREmfsFsEnb0KPWwSDh3kwgxSKb1AIFdfOG1YVf1dOjCdfrMnHjZDol6-AMK8NOAyTQoj1DajmBZ"
+#   EXPIRY_DATE = "1555918698230"
+#   REFRESH_TOKEN = "1/dsQ-BWIPHaBUcEf7iiEsbBzyX9cwTo2wCW05Hhyu-Tg"
+#   CLIENT_ID = "1031855812324-mgpi77bcmpb4qv0lckdkudh7i0uubbrm.apps.googleusercontent.com"
+#   CLIENT_SECRET = "7poS8ajL8J_eKjvHsZQZ0kq-"
+#   REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
+#   CALENDAR_ID = "k00j76b2k0p976p3uncsfqduo8@group.calendar.google.com"
+#   DEVELOPER = "Paul Hosler"
 
-[context.production]
- #  acces env variables
-  environment = { ACCESS_TOKEN = "ya29.GlvzBu7bVU2DlI5dzabA24uNkPZPgI7f7D4D72I9eUM4QIa1FREmfsFsEnb0KPWwSDh3kwgxSKb1AIFdfOG1YVf1dOjCdfrMnHjZDol6-AMK8NOAyTQoj1DajmBZ", EXPIRY_DATE = "1555918698230", REFRESH_TOKEN = "1/dsQ-BWIPHaBUcEf7iiEsbBzyX9cwTo2wCW05Hhyu-Tg", CLIENT_ID = "1031855812324-mgpi77bcmpb4qv0lckdkudh7i0uubbrm.apps.googleusercontent.com", CLIENT_SECRET = "7poS8ajL8J_eKjvHsZQZ0kq-", REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob", CALENDAR_ID = "k00j76b2k0p976p3uncsfqduo8@group.calendar.google.com", DEVELOPER = "Paul Hosler" }
+# [context.production]
+#  #  acces env variables
+#   environment = { ACCESS_TOKEN = "ya29.GlvzBu7bVU2DlI5dzabA24uNkPZPgI7f7D4D72I9eUM4QIa1FREmfsFsEnb0KPWwSDh3kwgxSKb1AIFdfOG1YVf1dOjCdfrMnHjZDol6-AMK8NOAyTQoj1DajmBZ", EXPIRY_DATE = "1555918698230", REFRESH_TOKEN = "1/dsQ-BWIPHaBUcEf7iiEsbBzyX9cwTo2wCW05Hhyu-Tg", CLIENT_ID = "1031855812324-mgpi77bcmpb4qv0lckdkudh7i0uubbrm.apps.googleusercontent.com", CLIENT_SECRET = "7poS8ajL8J_eKjvHsZQZ0kq-", REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob", CALENDAR_ID = "k00j76b2k0p976p3uncsfqduo8@group.calendar.google.com", DEVELOPER = "Paul Hosler" }
