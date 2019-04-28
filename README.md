@@ -103,9 +103,18 @@ the following is assuming you have an existing site
 ### Deploying from local dev environment
 
 Edit your netlify.toml file, reveiw the one from this repository.
+If deploying from your local dev you will need to edit the netlify.toml file
+
+Do not deploy before adding/editing the environment variables in the netlify UI.
+
+If you do, you will have to repeat the next steps. Netlify **only** reads them once for your functions and will not update on changes made after you deploy.
+
+The easiest way to deploy is to edit the settings in the UI to automatically build on PRs to your repo
 
 Skip this if you automatically build on PR to github:
-- `$ yarn build:lambda`
+
+If there is already a functions folder and you've edited anything, even the toml `$ rm -r functions`
+- `$ netlify functions:build --src src/lambda`
 - `$ netlfiy deploy --prod`
 
 
