@@ -51,7 +51,7 @@ I recommend entering the calender data as stringified json, for example:
 
 *this recomendation will change, the api will eventually also write data, and store things like URLs and event information in extendedProperties.private or extendedProperties.shared.*
 
-![google calendar entry page](./assets/images/google-calendar-entry-page.png =300x)
+![google calendar entry page](./assets/images/google-calendar-entry-page.png)
 
 ```json
 {
