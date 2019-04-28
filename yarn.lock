@@ -3549,10 +3549,10 @@ serve-static@1.13.2:
     parseurl "~1.3.2"
     send "0.16.2"
 
-serverless-http@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-2.0.0.tgz#c9f50419c298c1277f798b149e2bc4d54a2494ce"
-  integrity sha512-1Sa+PMRhvg2EkEwGuyrQLcKEJMU97YBYH14+TKV6UyY1WAqlasb477GZI9fNTX3nOvt65+tEbatTPlDDvZ1ykQ==
+serverless-http@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-2.0.1.tgz#8674303471520fb021e210e23a33bc969d99eefc"
+  integrity sha512-ROGjIuEOtgGCmCuVxuCaVrmSmVsISxS4YdKae5AZqPlznLQnQkrUwwemNF0+QA/eEi9XSM3fDUlv4TSNhVJItQ==
   dependencies:
     chai-as-promised "^7.1.1"
   optionalDependencies:
