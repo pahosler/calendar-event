@@ -16,7 +16,7 @@ then
 $ cd calendar-events
 $ yarn
 ```
-Create/edit a .env file in the projects root directory. Please refer to the [Environment variables example](##environment-variables).
+Create/edit a .env file in the projects root directory. Please refer to the [Environment variables example](#environment-variables).
 
 Once the environment variables are saved,
 
