@@ -107,7 +107,7 @@ the following is assuming you have an existing site
 | **Environment variables**    | **Values** |
 |:---|---|
 | **ACCESS_TOKEN**    | enter value from token.json ex. `ya29.GlvrBnCImILDrwAjzMq2rkvxE6Fx8StL9SnTCSgskSAdQnfTXrtybNeEYU574gsHayAevmLCgfA4QduUHdRh94MIGcJsp7boT_XrkxcdcK_DgRZAIA7TtBPZxopl` |
-| **CALENDAR_ID**     | enter value obtained from google calendar settings |
+| **CALENDAR_ID**     | enter value obtained from google calendar settings or enter `primary` |
 | **CLIENT_ID**       | enter value from credentials.json |
 | **CLIENT_SECRET**   | enter value from credentials.json |
 | **EXPIRY_DATE**     | enter value from token.json |
