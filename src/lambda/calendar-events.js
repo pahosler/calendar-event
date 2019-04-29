@@ -60,6 +60,13 @@ exports.handler = (event, context, callback) => {
     }
     if (events.length) {
       calEvents.events = events.map(event => ({
+        id: event.id,
+        status: event.status,
+        iCalUID: event.iCalUID,
+        recurringEventId: event.recurringEventId,
+        htmlLink: event.htmlLink,
+        extendedPropertiesShared: event.extendedProperties.shared,
+        extendedPropertiesPrivate: event.extendedProperties.private,
         start: event.start.dateTime || event.start.date,
         end: event.end.dateTime || event.end.date,
         summary: event.summary || '',
