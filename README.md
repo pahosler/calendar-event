@@ -6,7 +6,23 @@
 
 To run in a local environmet:
 
-`$ yarn start:lambda`
+Clone this repository
+
+`$ git clone https://github.com/pahosler/calendar-event.git`
+
+then
+
+```
+$ cd calendar-events
+$ yarn
+```
+Create/edit a .env file in the projects root directory. Please refer to the [Environment variables example](##Environment).
+
+Once the environment variables are saved,
+
+```
+$ yarn start:lambda
+```
 
 The function will be available at:
 
@@ -87,7 +103,7 @@ the following is assuming you have an existing site
 - edit deploy settings directory `./functions` is what you will want to enter for your Functions directory
 - Navigate to Build & Deploy Environment variables
 - Edit variables and enter the following (this must be done manually)
-
+## Environment
 | **Environment variables**    | **Values** |
 |:---|---|
 | **ACCESS_TOKEN**    | enter value from token.json ex. `ya29.GlvrBnCImILDrwAjzMq2rkvxE6Fx8StL9SnTCSgskSAdQnfTXrtybNeEYU574gsHayAevmLCgfA4QduUHdRh94MIGcJsp7boT_XrkxcdcK_DgRZAIA7TtBPZxopl` |
