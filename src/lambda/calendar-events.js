@@ -1,7 +1,6 @@
 require('dotenv').config()
 const { google } = require('googleapis')
 
-// const MAX_RESULTS = process.env.MAX_RESULTS
 const CALENDAR_ID = process.env.CALENDAR_ID
 const CLIENT_ID = process.env.CLIENT_ID
 const CLIENT_SECRET = process.env.CLIENT_SECRET
@@ -10,7 +9,7 @@ const REDIRECT_URI = process.env.REDIRECT_URI
 const TOKEN = {
   access_token: process.env.ACCESS_TOKEN,
   refresh_token: process.env.REFRESH_TOKEN,
-  scope: "https://www.googleapis.com/auth/calendar.readonly",
+  scope: "https://www.googleapis.com/auth/calendar",
   token_type: "Bearer",
   expiry_date: process.env.EXPIRY_DATE
 }
