@@ -28,7 +28,7 @@ The function will be available at:
 
 `http://localhost:9000/.netlify/functions/calendar-events?maxEvents=3`
 
-## Example Javascript Usage With <fetch>
+## Example Javascript Usage With < fetch >
 
 ```javascript
 const URI = "https://site-where-installed.netlify.com/.netlify/functions/calendar-events?maxEvents=3";
