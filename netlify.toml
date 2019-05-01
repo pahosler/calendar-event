@@ -12,7 +12,7 @@
   # the name of the folder where your website is, for example use build or public, etc
   # if you are only deploying this function to it's own netlify instance then comment out this line.
 
-  publish = "build"
+  # publish = "build"
 
 [build.environment]
   # your node version, if you need to set it, otherwise netlify defaults to 8
