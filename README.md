@@ -58,10 +58,15 @@ Or you can specify a date with maxEvents to get a list of events from a specific
 
 ### Data returned from the endpoint
 The calendar-events endpoint returns:
-- start (event start time)
-- end (event end time)
-- summary (the event title)
-- description (the data entered into the calendar textarea)
+- start: event.start.dateTime (or .date for all day events)
+- end: event.end.dateTime (or .date for all day events)
+- summary: event.summary (Title)
+- description: event.description
+- id: event.id
+- status: event.status
+- iCalUID: event.iCalUID
+- htmlLink: event.htmlLink
+- extendedProperties: event.extendedProperties
 
 More calendar data could easily be added, but the above is sufficient for the intended use case.
 

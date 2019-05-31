@@ -49,13 +49,16 @@ const getEvents = async ({ maxEvents= null, date= null }) => {
 }
 
 exports.handler = (event, context, callback) => {
+  console.log(event.queryStringParameters)
+  console.log(`body: ${event.body}`)
   let { maxEvents, date } = event.queryStringParameters
   getEvents({ maxEvents, date }).then(res => {
     const events = res.data.items
     const calEvents = {
       success: true,
-      message: 'success',
-      events: []
+      message: 'suxxess',
+      events: [],
+      path: event.path
     }
     if (events.length) {
       calEvents.events = events.map(event => ({
